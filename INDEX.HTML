@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ROY Pro Launcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#16213e">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <header>
+      <h1>ROY Pro Launcher</h1>
+      <p id="appCount">0 Apps</p>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <input type="text" id="search" placeholder="Search apps..." />
+
+    <!-- CATEGORY BAR -->
+    <div id="categories"></div>
+
+    <!-- GRID -->
+    <div id="grid"></div>
+
+    <footer>
+      <span>Status: Ready</span>
+      <span id="lastOpened">Last opened: None</span>
+    </footer>
+  </div>
+
+  <!-- FULLSCREEN LOADER -->
+  <div id="loader" class="hidden">
+    <div class="spinner"></div>
+    <p id="loaderText">OPENING...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
